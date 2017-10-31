@@ -2,7 +2,6 @@
 <aspectj>
 	<aspects>
 <!-- 	<aspect name="rsol.aspectj.aspect.UserInterceptor" /> -->
-		<!-- ims -->
 		<concrete-aspect name="rsol.aspectj.aspect.user" extends="rsol.aspectj.aspect.UserInterceptor">
 			<pointcut name="interceptMethods" expression="execution(* rsol.aspectj.demo.UserImpl.listUsers(..))" />
 		</concrete-aspect>
